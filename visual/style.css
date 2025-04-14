@@ -1,0 +1,327 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Header e Navegação */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+  background-color: #FFD700;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Barra lateral */
+aside {
+  width: 25%;
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.perfil {
+  text-align: center;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #007bff;
+}
+
+.interesses-aside, .tecnologias, .links-sociais {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.interesses-aside ul, .tecnologias ul {
+  padding-left: 20px;
+}
+
+.links-sociais a {
+  display: block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.links-sociais a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  color: #007bff;
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+}
+
+/* Projetos */
+.card-projeto {
+  background-color: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.card-projeto:hover {
+  transform: translateX(5px);
+}
+
+.card-projeto h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.card-projeto a {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  background-color: #007bff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.card-projeto a:hover {
+  background-color: #0056b3;
+}
+
+/* Galeria */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.galeria img {
+  width: 30%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+address {
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  margin: 15px 0;
+}
+
+.social-links a {
+  color: #FFD700;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #adb5bd;
+}
+
+/* Estilo para links sociais com ícones do Bootstrap */
+.social-icon-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.social-icon-links a {
+  display: flex;
+  align-items: center;
+  color: #007bff;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+  font-weight: 500;
+}
+
+.social-icon-links a:hover {
+  transform: translateX(5px);
+  color: #0056b3;
+}
+
+.social-icon-links svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Cores específicas para cada ícone social ao passar o mouse */
+.social-icon-links a:hover .bi-github {
+  color: #333;
+}
+
+.social-icon-links a:hover .bi-instagram {
+  color: #E1306C;
+}
+
+.social-icon-links a:hover .bi-linkedin {
+  color: #0077B5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+  
+  aside {
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+  
+  .galeria img {
+      width: 45%;
+  }
+  
+  .nav-links {
+      flex-wrap: wrap;
+  }
+  
+  .nav-links a {
+      margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria img {
+      width: 100%;
+  }
+}
+
+/* Dicionário HTML */
+.dicionario-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dicionario-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 15px;
+}
+
+.dicionario-item h3 {
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.dicionario-item p {
+  margin-top: 5px;
+}
+
+.voltar {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.voltar:hover {
+  background-color: #0056b3;
+}
