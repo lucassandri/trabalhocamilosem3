@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\09580920958\\Trabalho\\main\\index.html"
+            "file": "c:\\Users\\09580920958\\Trabalho\\index.html"
         }
     ]
 }
